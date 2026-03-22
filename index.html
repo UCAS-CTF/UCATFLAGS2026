@@ -695,7 +695,7 @@
             const glare = card.querySelector('.card-glare');
             card.addEventListener('mousemove', (e) => { const rect = card.getBoundingClientRect(); const x = e.clientX - rect.left; const y = e.clientY - rect.top; glare.style.setProperty('--mouse-x', `${x}px`); glare.style.setProperty('--mouse-y', `${y}px`); });
         });
-        const targetDate = new Date('2026-03-21T09:00:00').getTime(); 
+        const targetDate = new Date('2026-04-04T09:00:00').getTime(); 
         function updateStatus() {
             const now = new Date().getTime(); const distance = targetDate - now;
             if (distance > 0) {
