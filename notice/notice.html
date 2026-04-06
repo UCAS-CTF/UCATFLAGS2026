@@ -54,7 +54,6 @@
 
     <div class="top-bar"></div>
 
-    <!-- Header -->
     <header class="w-full max-w-4xl mb-12 flex flex-col md:flex-row justify-between items-start md:items-end border-b-2 border-black dark:border-gray-700 pb-6 gap-4 animate-slide-in">
         <div>
             <div class="flex items-center gap-2 mb-2">
@@ -82,28 +81,26 @@
 
     <main class="w-full max-w-4xl space-y-8">
 
-        <!-- 置顶通知 -->
         <article class="bg-white dark:bg-[#0a0a0a] border-2 border-black dark:border-tech-blue p-6 md:p-8 shadow-hard hover:shadow-hard-hover dark:shadow-none transition-all duration-300 relative overflow-hidden group animate-slide-in" style="animation-delay: 0.1s;">
             <div class="relative z-10">
                 <div class="flex items-center gap-3 mb-4">
                     <span class="bg-black dark:bg-tech-blue text-white px-3 py-1 text-xs font-mono font-bold uppercase">Pinned</span>
                     <span class="text-xs font-mono text-gray-500">2026.4.6</span>
                 </div>
-                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-black dark:text-white group-hover:text-tech-blue transition-colors">
+                <h2 id="pinned-title" class="text-2xl md:text-3xl font-bold mb-4 text-black dark:text-white group-hover:text-tech-blue transition-colors">
                     平台开放注册
                 </h2>
-                <p class="text-gray-700 dark:text-gray-400 text-lg leading-relaxed border-l-4 border-gray-200 dark:border-gray-800 pl-4">
+                <p id="pinned-desc" class="text-gray-700 dark:text-gray-400 text-lg leading-relaxed border-l-4 border-gray-200 dark:border-gray-800 pl-4">
                     平台现已全面开放。请各位选手提前完成 
                     <strong class="bg-blue-100 dark:bg-blue-900/30 px-1 text-tech-blue">账号注册</strong>、
                     <strong class="bg-blue-100 dark:bg-blue-900/30 px-1 text-tech-blue">战队创建</strong> 及组队流程。
                 </p>
-                <a href="http://47.120.35.166:8000/" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black dark:text-white border-b-2 border-tech-accent pb-0.5 hover:text-tech-accent transition-colors">
+                <a id="pinned-link" href="http://47.120.35.166:8000/" target="_blank" class="inline-flex mt-4 items-center gap-2 text-sm font-bold text-black dark:text-white border-b-2 border-tech-accent pb-0.5 hover:text-tech-accent transition-colors">
                     点击注册 &rarr;
                 </a>
             </div>
         </article>
 
-        <!-- 活动通知 -->
         <article class="bg-white dark:bg-[#0a0a0a] border border-gray-300 dark:border-gray-800 p-6 md:p-8 hover:border-tech-accent dark:hover:border-tech-accent transition-colors duration-300 animate-slide-in" style="animation-delay: 0.2s;">
             <div class="flex flex-col md:flex-row gap-6 md:gap-12">
                 <div class="flex-shrink-0 flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-2 min-w-[120px]">
@@ -111,57 +108,26 @@
                     <span class="font-mono text-xs text-gray-400 border-t border-gray-200 dark:border-gray-700 pt-2 w-full">EVENT INFO</span>
                 </div>
                 <div class="flex-grow">
-                    <h2 class="text-2xl font-bold mb-4 dark:text-white">UCATFLAGS 2026 报名中</h2>
+                    <h2 id="event-title" class="text-2xl font-bold mb-4 dark:text-white">UCATFLAGS 2026 报名中</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div class="bg-gray-50 dark:bg-[#111] p-4 rounded border border-gray-100 dark:border-gray-800">
-                            <span class="block text-xs font-mono text-gray-400 mb-1">DEADLINE</span>
-                            <strong class="text-black dark:text-white text-lg">2026.04.06</strong>
-                            <!-- <span class="text-xs text-red-500 ml-2">23:59:59</span> -->
+                            <span class="block text-xs font-mono text-gray-400 mb-1">REGISTRATION DEADLINE</span>
+                            <strong class="text-black dark:text-white text-lg">2026.04.10 23:59</strong>
                         </div>
                         <div class="bg-gray-50 dark:bg-[#111] p-4 rounded border border-gray-100 dark:border-gray-800">
-                            <span class="block text-xs font-mono text-gray-400 mb-1">DURATION</span>
-                            <strong class="text-black dark:text-white text-lg">2026.04.07 09:00 - 2026.04.12 21:00</strong>
+                            <span class="block text-xs font-mono text-gray-400 mb-1">EVENT DURATION</span>
+                            <strong class="text-black dark:text-white text-lg">04.07 09:00 - 04.12 21:00</strong>
                         </div>
                     </div>
                     <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
                         组队规则：每支队伍1-4人
                     </p>
-                    <a href="https://v.wjx.cn/vm/tcdk5WI.aspx#" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black dark:text-white border-b-2 border-tech-accent pb-0.5 hover:text-tech-accent transition-colors">
+                    <a id="reg-link" href="https://v.wjx.cn/vm/tcdk5WI.aspx#" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-black dark:text-white border-b-2 border-tech-accent pb-0.5 hover:text-tech-accent transition-colors">
                         前往报名问卷 &rarr;
                     </a>
                 </div>
             </div>
         </article>
-
-        <!-- 更新日志 -->
-        <!-- <article class="bg-white dark:bg-[#0a0a0a] border border-gray-300 dark:border-gray-800 p-6 md:p-8 hover:border-black dark:hover:border-white transition-colors duration-300 animate-slide-in" style="animation-delay: 0.3s;">
-            <div class="flex flex-col md:flex-row gap-6 md:gap-12">
-                <div class="flex-shrink-0 flex flex-row md:flex-col items-center md:items-start gap-4 md:gap-2 min-w-[120px]">
-                    <span class="text-4xl font-bold text-gray-300 dark:text-gray-700">02</span>
-                    <span class="font-mono text-xs text-gray-400 border-t border-gray-200 dark:border-gray-700 pt-2 w-full">CHANGELOG</span>
-                </div>
-                <div class="flex-grow">
-                    <h2 class="text-xl font-bold mb-4 flex items-center gap-2 dark:text-white">
-                        规则更新日志
-                        <span class="px-2 py-0.5 bg-gray-100 dark:bg-[#222] text-gray-600 dark:text-gray-300 text-[10px] rounded-full font-mono">v2.0</span>
-                    </h2>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <span class="mt-1 w-1.5 h-1.5 bg-black dark:bg-white rounded-full flex-shrink-0"></span>
-                            <span class="text-sm text-gray-700 dark:text-gray-400">
-                                <strong>赛制调整：</strong> 线下网安知识竞赛调整为 <span class="bg-yellow-100 dark:bg-yellow-900/30 px-1 dark:text-yellow-200">线上限时问卷（开卷）</span>。
-                            </span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="mt-1 w-1.5 h-1.5 bg-black dark:bg-white rounded-full flex-shrink-0"></span>
-                            <span class="text-sm text-gray-700 dark:text-gray-400">
-                                <strong>赛后审核：</strong> 推荐提交解题思路 (WriteUp)，不再强制要求。
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </article> -->
 
     </main>
 
@@ -171,5 +137,62 @@
         </p>
     </footer>
 
+    <script>
+        function updateTimelineState() {
+            const now = new Date();
+            
+            // 设定关键时间节点 (UTC+8 北京时间)
+            const timeStart = new Date('2026-04-07T09:00:00+08:00'); // 比赛开始
+            const timeRegEnd = new Date('2026-04-10T23:59:59+08:00'); // 报名截止
+            const timeEnd = new Date('2026-04-12T21:00:00+08:00');   // 比赛结束
+
+            // 获取需要修改的 DOM 元素
+            const pinnedTitle = document.getElementById('pinned-title');
+            const pinnedDesc = document.getElementById('pinned-desc');
+            const pinnedLink = document.getElementById('pinned-link');
+            
+            const eventTitle = document.getElementById('event-title');
+            const regLink = document.getElementById('reg-link');
+
+            if (now >= timeEnd) {
+                // 状态 3：比赛已结束
+                pinnedTitle.innerText = "比赛已圆满结束";
+                pinnedDesc.innerHTML = "感谢各位选手的热情参与！比赛现已结束，后续将公布最终成绩排名及官方解题思路 (WriteUp)。";
+                pinnedLink.innerText = "查看比赛平台积分榜 →";
+                
+                eventTitle.innerText = "UCATFLAGS 2026 已结束";
+                regLink.innerText = "报名与比赛均已截止";
+                regLink.removeAttribute('href');
+                regLink.className = "inline-flex items-center gap-2 text-sm font-bold text-gray-400 border-b-2 border-gray-400 pb-0.5 cursor-not-allowed";
+                
+            } else if (now >= timeRegEnd && now < timeEnd) {
+                // 状态 2：报名已截止，但比赛仍在进行中
+                pinnedTitle.innerText = "比赛火热进行中！(报名已截止)";
+                pinnedDesc.innerHTML = "报名通道现已关闭。已经完成组队的选手请抓紧时间在比赛平台答题，祝各位取得好成绩！";
+                pinnedLink.innerText = "进入比赛平台 →";
+                
+                eventTitle.innerText = "UCATFLAGS 2026 进行中";
+                regLink.innerText = "报名通道已关闭";
+                regLink.removeAttribute('href');
+                regLink.className = "inline-flex items-center gap-2 text-sm font-bold text-gray-400 border-b-2 border-gray-400 pb-0.5 cursor-not-allowed";
+                
+            } else if (now >= timeStart && now < timeRegEnd) {
+                // 状态 1：比赛已开始，且报名仍未截止
+                pinnedTitle.innerText = "比赛现已正式开始！";
+                pinnedDesc.innerHTML = "比赛平台通道已开启，请选手们登录并开始答题。同时 <strong class='bg-blue-100 dark:bg-blue-900/30 px-1 text-tech-blue'>报名通道仍在开放</strong>，未报名的选手请抓紧时间！";
+                pinnedLink.innerText = "进入比赛平台开始答题 →";
+                
+                eventTitle.innerText = "UCATFLAGS 2026 比赛中 & 报名中";
+                // 问卷链接保持默认状态
+            }
+        }
+
+        // 页面加载完成后立即执行一次
+        document.addEventListener('DOMContentLoaded', () => {
+            updateTimelineState();
+            // 每秒钟检查一次时间，以实现准点自动更新
+            setInterval(updateTimelineState, 1000);
+        });
+    </script>
 </body>
 </html>
